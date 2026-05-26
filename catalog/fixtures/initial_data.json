@@ -1,0 +1,63 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Электроника"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Одежда"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Книги"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Смартфон",
+      "description": "Современный смартфон с камерой 48Мп",
+      "price": "29999.99",
+      "category": 1
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Футболка",
+      "description": "Хлопковая футболка унисекс",
+      "price": "1999.99",
+      "category": 2
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Роман Достоевского",
+      "description": "Преступление и наказание",
+      "price": "899.99",
+      "category": 3
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Ноутбук",
+      "description": "Игровой ноутбук с видеокартой RTX",
+      "price": "79999.99",
+      "category": 1
+    }
+  }
+]
