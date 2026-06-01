@@ -1,3 +1,4 @@
+from decouple import config
 from pathlib import Path
 import os
 
@@ -64,14 +65,15 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Vlad_964',
-        'USER': 'postgres',
-        'PASSWORD': '964532178',
-        'HOST': '127.0.0.1',
-        'PORT': '5432'
+        'ENGINE': config('DB_ENGINE'),
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT', default='5432'),  # значение по умолчанию
     }
 }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
